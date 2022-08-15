@@ -1,0 +1,168 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+//==========================
+@import "fonts";
+@import "nullstyle";
+@import "grid";
+@import "main";
+@import "header";
+@import "footer";
+
+
+
+a:visited {
+	color: #ffffff;
+}
+
+// VARS
+
+	
+
+
+
+
+body {
+	position: relative;
+	
+}
+section {
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+	overflow: hidden;
+}
+textarea, input, select {
+	background: transparent;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	padding: 11px 20px;
+	font-size: 19px;
+	outline: none;
+	display: inline-block;
+	width: 100%;
+	margin: 9px 0px;
+	font-family: Raleway, sans-serif;
+	color: white;
+	&::-webkit-input-placeholder {color:white;}
+	&::-moz-placeholder          {color:white;}/* Firefox 19+ */
+	&:-moz-placeholder           {color:white;}/* Firefox 18- */
+	&:-ms-input-placeholder      {color:white;}
+}
+.option {
+	font-size: 16px;
+	
+}
+
+.button-white {
+	color: #444444;
+	background: #ffffff;
+	font-size: 13px;
+	letter-spacing: 3.9px;
+	font-family: Raleway, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 20px 49px;
+	border-radius: 3px; 
+}
+
+.main-title {
+	text-transform: uppercase;
+   font-size: 30px;
+   font-weight: 800;
+   color: #ffffff;
+   span {
+      color: #f9c766;
+   }
+}
+.fa-star {
+   color: #f9c766;
+}
+
+.top {
+	position: fixed;
+	bottom: 30px;
+	right: -100px;
+	background-color: #ffffff;
+	z-index: 99999;
+	border-radius: 10em;
+	color: #666;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	transition: all .3s ease;
+	opacity: .5;
+	&:hover {
+		color: #ffffff;
+		background-color: #f9c766;
+		opacity: 1;
+	}
+	&.active {
+		right: 25px;
+	}
+}
+@mixin opacity($opacity) {
+	opacity: $opacity / 100;
+	filter: alpha(opacity=$opacity)
+}
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 999999;
+	background: rgb(32, 31, 31);
+	.pulse {
+		position: relative;
+		left: 50%;
+		top: 50vh;
+		margin-left: -40px;
+		margin-right: -40px;
+		&:before, &:after {
+			content: '';
+			border: 5px solid #323232;
+			width: 80px;
+			height: 80px;
+			border-radius: 500px;
+			position: absolute;
+		}
+		&:before {
+			animation: pulse-outer .8s ease-in infinite;
+		}
+		&:after {
+			animation: pulse-inner .8s linear infinite;
+		}
+	}
+}
+@keyframes pulse-outer {
+	0% {
+		@include opacity(100);
+	}
+	50% {
+		@include opacity(50);
+	}
+	100% {
+		@include opacity(100);
+	}
+}
+@keyframes pulse-inner {
+	0% {
+		@include opacity(0);
+		transform: scale(0)
+	}
+	100% {
+		@include opacity(100);
+		transform: scale(1)
+	}
+}

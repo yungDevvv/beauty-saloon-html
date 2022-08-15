@@ -1,0 +1,120 @@
+.footer {
+   background-color: #242424;
+   font-size: 14px;
+   font-family: Raleway;
+}
+.footer-container {
+   max-width: 1155px;
+   margin: 0 auto;
+   padding: 2.5% 0;
+}
+.footer-row {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.footer-left {
+   display: flex;
+   flex-direction: column;
+   max-width: 162px;
+}
+.footer-logo {
+   margin-bottom: 24px;
+   img {
+      width: 125px;
+      height: 24px;
+   }
+}
+.footer-text {
+   color: #777777;
+   line-height: 24px;
+   text-align: left;
+   margin-bottom: 67px;
+}
+.footer-soc {
+   display: flex;
+   justify-content: space-around;
+   margin-left: -15px;
+}
+.footer-circle {
+   border-radius: 50%;
+   width: 38px;
+   height: 38px;
+   background: #505050;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   .fa {
+      color: #b9b9b9;
+      opacity: 0.82;
+   }
+}
+
+.footer-nav {
+   display: flex;
+   flex-direction: column;
+   li {
+      
+      font-size: 14px;
+      margin-bottom: 20px;
+      a {
+         color: #979797;
+         transition: all .2s ease;
+         &:hover {
+            color: #f9c766;
+         }
+         &:before {
+            content: '\f219';
+            font-family: fontawesome;
+            font-size: 11px;
+            padding-right: 5px;
+         }
+      }
+      
+   }
+}
+.footer-right {
+   display: flex;
+   flex-direction: column;
+   font-size: 20px;
+   font-size: 15px;
+   color: #ffffff;
+   opacity: 0.80;
+   max-width: 250px;
+}
+.footer-address {
+   line-height: 28px;
+   &:before {
+      font-family: fontawesome;
+      content: "\f124";
+      padding-right: 10px;
+      opacity: 0.50;
+   }
+}
+.footer-worktime {
+   margin-top: 24px;
+   margin-bottom: 25px;
+   line-height: 28px;
+   &:before {
+      font-family: fontawesome;
+      content: "\f017";
+      padding-right: 10px;
+      font-size: 15px;
+      opacity: 0.50;
+   }
+   
+}
+.footer-phonenumber {
+   line-height: 28px;
+   font-size: 26px;
+   font-family: "Fira Sans";
+   color: white;
+   &:before {
+      font-family: fontawesome;
+      content: "\f10b";
+      padding-right: 10px;
+      font-size: 16px;
+      opacity: 0.50;
+   }
+}

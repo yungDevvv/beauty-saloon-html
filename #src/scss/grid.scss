@@ -1,0 +1,395 @@
+@media ( max-width: 1366px ) {
+   
+	.flex-center {
+      width: 900px;
+    }
+    // INFO SECTION
+   .container-info {
+      padding: 0 20px;
+   }
+   // CALL SECTION 
+   .form-body {
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+   // PARTNER SECTION 
+   .partners-slider {
+      max-width: 800px;
+   }
+   .slider-parnters-slide {
+      img {
+         max-width: 150px;
+      }
+   }
+}
+   
+
+@media ( max-width: 1110px ) {
+   .work-time {
+      display: none;
+   }
+   .contact-container {
+      justify-content: center;
+    }
+    .contact-info {
+      margin-right: 50px;
+      white-space: nowrap;
+    }
+    .flex-center {
+      width: 720px;
+    }
+    .header-body {
+      max-width: 570px;
+      margin-left: 0px;
+    }
+    .header-top-title {
+       font-size: 55px;
+       &:after {
+          margin-top: 25px;
+       }
+    }
+    .welcome {
+       margin-bottom: 17px;
+       span {
+          font-size: 14px;
+       }
+    }
+    .header-info {
+       margin-bottom: 25px;
+       margin-top: 27px;
+    }
+    .country {
+       margin-top: 35px;
+    }
+    // INFO SECTION // 
+
+    .container-info {
+      max-width: 740px;
+   }
+    .row-info {
+       flex-wrap: wrap;
+    }
+    .info-block {
+       max-width: none;
+       margin-right: 0;
+    }
+    .info-title {
+       font-size: 33px;
+    }
+    .info-text {
+       font-size: 20px;
+    }
+    .text-bottom {
+       margin-bottom: 30px;
+    }
+    
+    // SECTION review
+
+    .quotes {
+      max-width: 550px;
+   }
+}
+
+
+
+@media ( max-width: 830px ) {
+   .header-body {
+      max-width: 540px;
+      padding-left: 20px;
+    }
+    // INFO SECTION
+   .text-top {
+      margin-bottom: 29px;
+   }
+   // section call
+   .call {
+      &:before {
+         width: 100%;
+         background: rgba(249, 203, 114, 0.90);
+      }
+   }
+   .row-call {
+      display: block;
+   }
+   .block-form {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      max-width: 550px;
+      margin: 0 auto;
+   }
+   .call-button {
+      margin-top: 37px;
+   }
+   .call-inputs {
+      margin-top: 40px;
+   }
+    // SECTION review
+    .marks {
+       &:after, &:before {
+          display: none;
+       }
+    }
+    .quotes {
+      max-width: 600px;
+      padding: 0 20px;
+   }
+   .review-container {
+      padding-top: 70px;
+      padding-bottom: 50px;
+   }
+   .review-title {
+      margin-bottom: 30px;
+   }
+   .review-text {
+      padding-bottom: 60px;
+   }
+   // PARTNER SECTION 
+   .partners-slider {
+      max-width: 500px;
+   }
+   .slider-parnters-slide {
+      img {
+         max-width: 150px;
+      }
+   }
+   
+   // SECTION map 
+   .container-map {
+      iframe {
+         margin: auto;
+         display: block;
+         max-width: 600px;
+      }
+   }
+
+   // FOOTER
+
+   .footer-row {
+      flex-wrap: wrap;
+   }
+   .footer-middle {
+      display: none;
+   }
+   .footer-text {
+      margin-bottom: 40px;
+   }
+}
+
+@media screen and ( max-width: 631px ) {
+	.socmedia-row {
+      display: none;
+   }
+   .flex-center {
+      width: 540px;
+    }
+    .header-body {
+       padding-right: 20px;
+    }
+    .header-top-title {
+       font-size: 45px;
+    }
+    .contact-container {
+       justify-content: none;
+       flex-wrap: wrap;
+       margin-left: 20px;
+    }
+    .contact-info {
+      margin-right: 20px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .work-time {
+       display: none;
+    }
+    .contact-number {
+       margin-bottom: 0px;
+    }
+    // INFO SECTION 
+    .row-info {
+       padding-top: 50px;
+       padding-bottom: 65px;
+    }
+    // SECTION map 
+    .container-map {
+      iframe {
+         margin: auto;
+         display: block;
+         max-width: 400px;
+         height: 300px;
+      }
+   }
+   // FOOTER 
+   .footer {
+      padding: 8% 0;
+   }
+   .footer-container {
+      padding: 0 5%;
+   }
+   .footer-row {
+      display: block;
+   }
+   .footer-left {
+      margin-bottom: 25px;
+      max-width: 250px;
+   }
+   .footer-soc {
+      justify-content: end;
+      .footer-circle {
+         margin-left: 15px;
+      }
+   }
+   .footer-right {
+      max-width: 380px;
+   }
+   .footer-worktime {
+      font-size: 19px;
+   }
+   .footer-address {
+      font-size: 19px;
+   }
+   .footer-text {
+      font-size: 17px;
+   }
+   
+}
+
+@media screen and ( max-width: 463px ) {
+   // SECTION service
+   .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+      top: 15px;
+   }
+   .column-title {
+      font-size: 23px;
+   }
+   .column-service {
+      font-size: 16px;
+   }
+   .column-service-body {
+      margin-top: 20px;
+   }
+   .body-service {
+      font-size: 18px;
+   }
+   div.swiper-button-next:after {
+      left: 3px;
+      background: #ffffff;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   div.swiper-button-prev:after {
+      right: 3px;
+      background: #ffffff;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   // SECTION INFO
+   .header-top-title {
+      font-size: 33px;
+      &:after {
+         margin-top: 19px;
+      }
+   }
+   .welcome {
+      margin-bottom: 14px;
+      span {
+         font-size: 11px;
+      }
+   }
+   .country {
+      margin-top: 25px;
+      font-size: 20px;
+   }
+   .header-info {
+      margin-top: 20px;
+      font-size: 15px;
+   }
+   .btn-primary {
+      padding: 20px 40px;
+   }
+   // SECTION review
+   .review-text {
+      padding-bottom: 40px;
+      font-size: 14px;
+      margin-top: 20px;
+   }
+   // SECTION map
+   .map-title {
+      font-size: 25px;
+   }
+   .map-address {
+      font-size: 15px;
+   }
+   .container-map {
+      iframe {
+         margin: auto;
+         display: block;
+         width: 300px;
+         height: 200px;
+      }
+   }
+   
+}
+
+
+//-------------------------------------OTHER------------------------------//
+@media screen and ( max-width: 787px ) {
+   .slide-container {
+      padding: 5% 0;
+   }
+}
+@media screen and ( max-width: 550px ) {
+   // section info
+   .info-title {
+      font-size: 26px;
+      margin-bottom: 25px;
+   }
+   .info-text {
+      font-size: 16px;
+   }
+   .text-top {
+      margin-bottom: 20px;
+   }
+   .call {
+      background-size: cover;
+      background-position: 40%;
+   }
+   // PARTNER SECTION 
+   .partners-slider {
+      max-width: 300px;
+   }
+   .slider-parnters-slide {
+      padding-left: 80px;
+      img {
+         max-width: 150px;
+      }
+   }
+}
+@media ( max-width: 1189px ) {
+   // Section call background size
+   .call {
+      background-size: cover;
+      background-position: 10%;
+   }
+}
+@media screen and ( max-width: 430px ) {
+   // section call
+   .form-body {
+      margin: 0 20px;
+   }
+   .block-form {
+      width: 100%;
+   }
+   .call-title {
+      font-size: 27px;
+   }
+   .call {
+      background-size: cover;
+      background-position: 50%;
+   }
+}
